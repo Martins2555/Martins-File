@@ -1,3 +1,223 @@
-<html>
+<!DOCTYPE html> 
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Martins Obasi">
+        <meta name="description" content="This page contains all the things I am learning how to create as I learn HTML.">
+<title>My First Webpage</title>
+<link rel="icon" href="HTML_logo.png" type="image/x-icon">
+<link rel="stylesheet" href="main.css" type="text/css">
+    </head>
+
+    <body>
+        <header>
+        <h1>My Goals for the Year</h1>
+
+        <nav aria-label="primary-navigation">
+            <ul>
+                <li>
+                    <a href="#html">Learning HTML</a>
+                </li>
+                <li>
+                    <a href="#vacation">Planning a Vacation</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact Me</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+        <hr>
+        <main>
+ <article id="html">
+        <h2>I'm ready to learn HTML  </h2font-family: Arial, Helvetica, sans-serif;
+        <p>This is my first web page.</p>
+        <section>
+            <h3>HTML5</h3>
+        <img src="/img/HTML5_Logo_280x300.png" alt="I wm learning HTML5" width="280" height="300">
+        <figure>
+            <figcaption>Examples of HTML code</figcaption>
+            <p>
+                <code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code>
+            </p>
+            <p>&lt;p&gt; I am learning HTML &lt;/p""&gt;</p>
+        </figure>
+    </section>
+    <section>
+    <h3>My Daily Schedule</h3>
+    <p>Let me tell you how:</p>
+    <ol>
+        <li>...I learn more about web dev.</li>
+        <li>...I plan out my schedule.</li>
+           <li>...I use resources from <abbr title="Mozilla Developer Network">
+            <a href="https://developer.mozilla.org">MDN</a>
+        </abbr>.</li>
+        </ol>
+        <aside>
+            <details>
+                <summary>Guess the <mark>number of hours</mark> I code per day</summary>
+                <p>I start at <time datetime="08:00">8 am</time> and I write code for <time datetime="PT3H"> 3 hours</time> every morning. </p>
+            </details>
+        </aside>
+        <br>
+        <table>
+            <caption>My Daily Schedule</caption>
+            <thead>
+            <tr>
+                <th>&nbsp;</th>
+                <th scope="col">Time</th>
+                <th scope="col">activity</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Morning</th>
+                <td>
+                    <time datetime="08:00">8am</time>-<time datetime="11:00">11am</time>
+                </td>
+                <td>Write Code</td>
+            </tr>
+            <tr>
+                <th scope="row">Break</th>
+                <td>
+                    <time datetime="11:00">11am</time>-<time datetime="12:00">12pm</time>
+                </td>
+                <td>Eat Lunch</td>
+            </tr>
+            <tr>
+                <th scope="row">Afternoon</th>
+                <td>
+                    <time datetime="12:00">12pm</time>-<time datetime="17:00">5pm</time>
+                </td>
+                <td>Study for Other Courses</td>
+            </tr>
+            <tr>
+                <th scope="row">Evening</th>
+                <td rowspan="2">All Other Times</td>
+
+                <td>Free Time</td>
+            </tr>
+            <tr>
+                <th scope="row">Night</th>
+                <td>Sleep</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3"><mark>And that's what I do everyday, 5 days a week. Just eat, sleep, code ..and recharge!</mark></td>
+
+            </tr>
+        </tfoot>
+        </table>
+    </section>
+ </article>
+
+        <hr>
+
+        <article id="vacation">
+        <h2>I Am Also Planning a Vacation</h2>
+        <p>I've been working hard and <em>really need a getaway </em>.</p>
+        <p>I live in <abbr title="Kansas">KS</abbr> so I want to visit a beach .</p>
+
+        <section>
+        <h3>Places I'd Like to Visit</h3>
+        <ul>
+        <li>
+            <p>I've heard good things about the Caribean</p>
+            <figure>
+            <img src="/img/beach-background-beautiful-beach-landscape-tropical-nature-scene-palm-trees-blue-sky-summer-holiday-vacation-concept-93725354.jpg" alt="Caribbean beach" width="500" height="300" loading="lazy">
+            <figcaption>
+                Caribbean Beach Getaway
+            </figcaption>
+            </figure>
+        </li>
+       <li>
+        <P>I've heard good things about going here;</P>
+   
+        <address>
+            Commanders of destiny college,
+            <br> NO.18 Pikolo Crescent,
+            <br>  New Nyanya,
+            <br> Karu Local Government Area,
+            <br> Nasarawa State,
+            <br>Nigeria.
+        </address>
+        <Figure>
+        <img src="/img/pexels-thatguycraig000-1563356.jpg" alt="Cancum Vacation" title="It's 5 0'clock somewhere!" width="500" height="300" loading="lazy">
+        <figcaption>
+            A Caribbean Vacation Image
+        </figcaption>
+        </Figure>
+        </li>
+        </ul>
+    </section>
+        <!-- TODO; Add more places-->
+         <section>
+        <h3>Places I Want to Avoid</h3>
+       <dl>
+        <dt>North Pole</dt>
+        <dd>I hear this is <strong>cold!</strong></dd>
+
+        <dt>South Pole</dt>
+        <dd>This is also cold.</dd>
+        <dt>Mountain Tops</dt>
+        <dd>These are also cold</dd>
+       </dl>
+    </section>
+        </article>
+        <hr>
+
+        <article id="contact">
+            <h2>Contact Me</h2>
+            <p>I'd like to hear from you!</p>
+
+            <form action="https://httpbin.org/get" method="get">
+                <p>
+                <label for="firstName">First Name:</label>
+                <input type="text" name="firstName" id="firstName" placeholder="Martins" autocomplete="on" required autofocus>
+            </p>
+            <p>
+                <label for="lastName">Last Name:</label>
+                <input type="text" name="lastName" id="lastName" placeholder="Obasi" autocomplete="on" required>
+            </p>
+              <p>
+
+                <label for="email">Email :</label>
+
+                <input type="text" name="email" id="email" placeholder="obasimartins43@gmail.com" required autofocus>
+            </p>
+            <p>
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" placeholder="your secret" required>
+            </p>
+            <p>
+                <label for="phone">Phone:</label>
+                <input type="tel" name="phone" id="phone" placeholder="5555555555" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+            </p>
+                  <p>
+                <label for="country">Country:</label>
+                <input type="text" name="country" id="country" placeholder="Nigeria" autocomplete="on" required autofocus>
+            </p>
+             <p>
+
+                <label for="postal code">Postal Code:</label>
+
+                <input type="tel" name="postal code" id="postal code" placeholder="901211" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+            </p>
+            </form>      
+        </article>
+</main>
+        <hr>
+        <footer>
+            <p>
+        &lt;&lt;&lt; &copy; <a href="about.html">Martins Obasi</a> &gt;&gt;&gt;
+    </p>
+        <p>
+            <a href="#">Back to Top</a>
+        </p>
+    </footer>
+    </body>
 
 </html>
